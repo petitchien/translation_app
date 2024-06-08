@@ -16,7 +16,7 @@ chat = ChatOpenAI(model="gpt-3.5-turbo")
 
 # プロンプトのテンプレート
 system_template = (
-    "あなたは、{source_lang} を {target_lang}に翻訳する優秀な翻訳アシスタントです。翻訳結果以外は出力しないでください。"
+    "あなたは、{source_lang} を {target_lang}に翻訳する優秀な翻訳アシスタントです。入力された文書をそのまま翻訳し、翻訳結果以外は出力しないでください。"
 )
 system_message_prompt = SystemMessagePromptTemplate.from_template(system_template)
 
